@@ -102,7 +102,7 @@
     async function fetchCompletion(userMessage) {
       try {
         // Make a POST request to the backend API
-        const response = await axios.post('/api/index', { userMessage });
+        const response = await axios.post('https://arlington-heist.vercel.app/api/index', { userMessage });
         // Display the result from the API
         const result = response.data.result;
         resultElement.textContent = result;
